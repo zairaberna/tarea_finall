@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Zaira Bernande</title>
+		<meta charset="utf-8">	
+		<link rel="stylesheet" type="text/css" href="../estilos/estilo.css">
+	</head>
+	<body>
+		<header>
+			<h1><a href="../index.html"><img src="../imagenes/imagenhome.jfif" alt="vitruvio" width="110"></a>500 days of summer</h1>
+			<!--NAVEGADOR-->
+			<nav>
+				<ul>
+					<li><a href="../index.html">Blog</a></li>
+					<li><a href="#">Contactanos</a></li>
+					<li><a href="../web/videos.html">Video</a></li>
+				</ul>
+			</nav>
+		</header>
+		<br>
+		<div class="containerp">
+			<div class="titulo"><h3>Pon tus datos y contacta con nosotros</h3></div>
+			<div class="encabezado">
+				<form action="preguntas.php" method="post" enctype="multipart/form-data">
+					<div>
+						<label>Nombre:</label>
+						<input type="text" name="nombre" required maxlength="10">
+					</div>
+					<div>
+						<label>Edad:</label>
+						<input type="number" name="edad" min="18">
+					</div>
+					<div>
+						<div><label>Indicanos tu rango de edad</label></div>
+						<div>
+							<input type="radio" name="anio">1930-1980
+						</div>
+						<div>
+							<input type="radio" name="anio">1980-2003
+						</div>
+						<div>
+							<input type="radio" name="anio">+2003
+						</div>
+					</div>
+					<div>
+						<textarea name="respuesta" placeholder="Dinos cual es tu problema "  class="respuesta"></textarea>
+					</div>
+					<div>
+						<input type="submit" value="Enviar">
+						<input type="reset" value="Restablecer">
+					</div>
+				</form>
+			</div>
+		</div>
+		<!--Bloque de pie de página-->
+		<footer>
+			<br>
+			<h5>&copy;2023 AW Zaira Bernade</h5>
+		</footer>
+	</body>
+</html>
